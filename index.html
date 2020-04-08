@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="calculadora">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div id="tela"></div>
+        <!--tela-->
+        <div class="botoes">
+          <div>
+            <button class="botaoDigito" value="7">7</button>
+            <button class="botaoDigito" value="8">8</button>
+            <button class="botaoDigito" value="9">9</button>
+            <button class="botaoAcao" value="c">C</button>
+          </div>
+
+          <div>
+            <button class="botaoDigito" value="4">4</button>
+            <button class="botaoDigito" value="5">5</button>
+            <button class="botaoDigito" value="6">6</button>
+            <button class="botaoAcao" value="+">+</button>
+          </div>
+
+          <div>
+            <button class="botaoDigito" value="1">1</button>
+            <button class="botaoDigito" value="2">2</button>
+            <button class="botaoDigito" value="3">3</button>
+            <button class="botaoAcao" value="-">-</button>
+          </div>
+
+          <div>
+            <button class="botaoDigito" value="0">0</button>
+            <button class="botaoAcao" value="*">*</button>
+            <button class="botaoAcao" value="/">/</button>
+            <button id="botaoIgual" class="botaoAcao" disabled  value="=">=</button>
+          </div>
+        </div>
+        <!--botões-->
+      </div>
+      <!--calculadora-->
+    </div>
+    <!--container-->
+
+    <script>
+      var botoesDigitos = document.getElementsByClassName("botaoDigito");
+      botoesDigitos[0].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[1].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[2].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[3].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[4].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[5].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[6].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[7].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[8].addEventListener('click', botaoDigitoClick);
+      botoesDigitos[9].addEventListener('click', botaoDigitoClick);
+
+      var botoesAcoes = document.getElementsByClassName('botaoAcao');
+        botoesAcoes[0].addEventListener('click', botaoAcaoClick);
+        botoesAcoes[1].addEventListener('click', botaoAcaoClick);
+        botoesAcoes[2].addEventListener('click', botaoAcaoClick);
+        botoesAcoes[3].addEventListener('click', botaoAcaoClick);
+        botoesAcoes[4].addEventListener('click', botaoAcaoClick);
+        botoesAcoes[5].addEventListener('click', botaoAcaoClick);
+    </script>
+  </body>
+</html>
